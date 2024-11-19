@@ -1,0 +1,62 @@
+.imageBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /* Adjusted to space between images */
+	margin: 20px;
+  }
+  
+  .leader {
+	box-sizing: border-box;
+	width: calc(25% - 20px); /* Adjusted width to accommodate 4 images with equal spacing */
+	max-width: 150px;
+	height: 150px; /* Set a fixed height for all images */
+	object-fit: cover; /* Maintain aspect ratio while covering the fixed height */
+	margin-bottom: 20px;
+	margin-right: 10px; /* Added margin to the right side of each image */
+	border: 2px solid #060606;
+	border-radius: 8px;
+	cursor: pointer;
+  }
+  
+
+  /*media queries are used to change the width of the cards at different viewport sizes*/
+@media only screen and (max-width: 1024px) {
+	.leader {width: 30%;}
+}
+
+@media only screen and (max-width: 768px) {
+	.leader{width: 40%;}
+}
+
+@media only screen and (max-width: 600px) {
+	.leader {width: 90%;}
+}
+  
+  .buttonDiv {
+	/* text-align: center; */
+	margin: 20px;
+	border: 2px solid #030303;
+	background-color: #f0f0f0ab;
+  }
+  
+  button {
+	margin: 5px;
+  }
+  
+  .leader:hover {
+	border: 2px solid blue;
+  }
+  
+  footer {
+	margin-top: 20px;
+	border: 2px solid black;
+	padding: 10px;
+	background-color: #f0f0f0ab;
+  }
+  
+  .name {
+	margin: 20px;
+	border: 2px solid #030303;
+	background-color: #f0f0f0ab;
+  }
+  
